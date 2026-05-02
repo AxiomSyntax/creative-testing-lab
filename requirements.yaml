@@ -1,0 +1,14 @@
+packages:
+  "framer-motion": "For page transitions and interactive micro-animations on cards"
+  "@xyflow/react": "For interactive node-based process diagrams for the frameworks"
+  "lucide-react": "Already in base stack, but confirming for icons"
+
+images:
+  - path: "artifacts/creative-testing-lab/public/images/logo-icon.png"
+    description: "A minimal, modern, abstract geometric logo mark for a tool called 'Creative Testing Lab'. It should look like a glowing stylized beaker or a growth chart intersecting. Deep dark navy background with vibrant neon purple and cyan glowing elements. High-end tech SaaS aesthetic."
+    aspect_ratio: "1:1"
+
+notes:
+  - This is a frontend-only prototype demonstrating the framework.
+  - No backend is required; mock data is used for demonstrating the intelligence and iteration sections.
+  - Dark mode is enforced by default via CSS variables.

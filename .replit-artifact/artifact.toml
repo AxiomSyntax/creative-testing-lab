@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Creative Testing Lab"
+version = "1.0.0"
+id = "artifacts/creative-testing-lab"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 22727
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/creative-testing-lab run dev"
+
+[services.env]
+PORT = "22727"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/creative-testing-lab", "run", "build"]
+publicDir = "artifacts/creative-testing-lab/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
