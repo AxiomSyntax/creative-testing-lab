@@ -1,7 +1,7 @@
 {
   "name": "@workspace/creative-testing-lab",
   "version": "0.0.0",
-  "packageManager": "pnpm@8"
+  "packageManager": "pnpm@8",
   "private": true,
   "type": "module",
   "scripts": {
